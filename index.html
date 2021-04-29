@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilgi Girişi</title>
+    <script src="scripts/scriptsJS.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body onload="sorulariGizle()">
+    <div style="text-align: center;" id="giris-sayfa">
+        <div id="bilgi-giris-text">
+            <p style="font-size: xxx-large;">Bilgi Girişi</p>
+        </div>
+        <form id="giris">
+            <div class="girisImageDiv">
+                <img src="images/girisImage.png" alt="giris" class="girisImage">
+            </div>
+            <div id=text>
+                <label for="AD"><b>AD :</b></label>
+                <input type="text" id="ad" name="ad" placeholder="ADINIZI BURAYA GİRİN" onkeydown="">
+
+                <label for="SOYAD"><b>SOYAD:</b></label>
+                <input type="text" id="soyad" name="soyad" placeholder="SOYADINIZ BURAYA GİRİN" onkeydown="">
+
+                <div id="hatadiv"><label type="text" id="hata"><b></b></label></div>
+                <input type="button" value="BAŞLA" id="basla" onclick="formKontrol(); adSoyadGoster()">
+            </div>
+        </form>
+    </div>
+    <div style="text-align: center;" id="test-sayfa">
+        <div id="test-sayfa-text">
+            <p style="font-size: xxx-large;">Test Sayfası</p>
+        </div>
+        <form id="test">
+            <label for="AD" id="adgoster"><b>AD:</b></label>
+            <label for="SOYAD" id="soyadgoster"><b>SOYAD: </b></label>
+            <div id="sorular">
+                <div id="soru1">
+                    <p>1/ Aşağıdaki noktalama işaretlerinden hangisi tamamlanmış cümlelerin sonuna gelir ?</p>
+                    <div id="secA1">
+                        <input type="radio" id="a1" name="soru1" value="a" onclick="cevapCheck('a')">
+                        <label for="a">Virgül ( , )</label><br>
+                    </div>
+                    <div id="secB1">
+                        <input type="radio" id="b1" name="soru1" value="b" onclick="cevapCheck('b')">
+                        <label for="b">Nokta ( . )</label><br>
+                    </div>
+                    <div id="secC1">
+                        <input type="radio" id="c1" name="soru1" value="c" onclick="cevapCheck('c')">
+                        <label for="c">Kesme işareti ( ' )</label><br>
+                    </div>
+                    <div id="secD1">
+                        <input type="radio" id="d1" name="soru1" value="d" onclick="cevapCheck('d')">
+                        <label for="cevap1">Soru işareti ( ? )</label><br>
+                    </div>
+                    <div id="secE1">
+                        <input type="radio" id="e1" name="soru1" value="e" onclick="cevapCheck('e')">
+                        <label for="e">Nokta Virgül ( ; )</label><br>
+                    </div>
+                </div>
+                <div id="soru2">
+                    <p>2/ Aşağıdaki cümlelerin hangisinin sonuna soru işareti ( ? ) gelmelidir ?</p>
+                    <div id="secA2">
+                        <input type="radio" id="a2" name="soru2" value="a" onclick="cevapCheck('a')">
+                        <label for="a">Ne zaman çıkacaksın</label><br>
+                    </div>
+                    <div id="secB2">
+                        <input type="radio" id="b2" name="soru2" value="b" onclick="cevapCheck('b')">
+                        <label for="b">Ben okula gittim</label><br>
+                    </div>
+                    <div id="secC2">
+                        <input type="radio" id="c2" name="soru2" value="c" onclick="cevapCheck('c')">
+                        <label for="c">Pazardan elma aldık</label><br>
+                    </div>
+                    <div id="secD2">
+                        <input type="radio" id="d2" name="soru2" value="d" onclick="cevapCheck('d')">
+                        <label for="d">Erken kalk</label><br>
+                    </div>
+                    <div id="secE2">
+                        <input type="radio" id="e2" name="soru2" value="e" onclick="cevapCheck('e')">
+                        <label for="e">Hoşgeldin</label><br>
+                    </div>
+                </div>
+                <div id="soru3">
+                    <p>3/ Dünya' nın şekli aşağıdaki meyvelerden hangisine benzer? </p>
+                    <div id="secA3">
+                        <input type="radio" id="a3" name="soru3" value="a" onclick="cevapCheck('a')">
+                        <label for="a">Portakal</label><br>
+                    </div>
+                    <div id="secB3">
+                        <input type="radio" id="b3" name="soru3" value="b" onclick="cevapCheck('b')">
+                        <label for="b">Muz</label><br>
+                    </div>
+                    <div id="secC3">
+                        <input type="radio" id="c3" name="soru3" value="c" onclick="cevapCheck('c')">
+                        <label for="c">Kivi</label><br>
+                    </div>
+                    <div id="secD3">
+                        <input type="radio" id="d3" name="soru3" value="d" onclick="cevapCheck('d')">
+                        <label for="d">Ayva</label><br>
+                    </div>
+                    <div id="secE3">
+                        <input type="radio" id="e3" name="soru3" value="e" onclick="cevapCheck('e')">
+                        <label for="e">Ananas</label><br>
+                    </div>
+                </div>
+                <div id="soru4">
+                    <p>4/ Dünyamızın 4'te 3'ünü aşağıdakilerden hangisi oluşturur?</p>
+                    <div id="secA4">
+                        <input type="radio" id="a4" name="soru4" value="a" onclick="cevapCheck('a')">
+                        <label for="a">Yemekhane</label><br>
+                    </div>
+                    <div id="secB4">
+                        <input type="radio" id="b4" name="soru4" value="b" onclick="cevapCheck('b')">
+                        <label for="b">Kara</label><br>
+                    </div>
+                    <div id="secC4">
+                        <input type="radio" id="c4" name="soru4" value="c" onclick="cevapCheck('c')">
+                        <label for="c">Su</label><br>
+                    </div>
+                    <div id="secD4">
+                        <input type="radio" id="d4" name="soru4" value="d" onclick="cevapCheck('d')">
+                        <label for="d">Hava</label><br>
+                    </div>
+                    <div id="secE4">
+                        <input type="radio" id="e4" name="soru4" value="e" onclick="cevapCheck('e')">
+                        <label for="e">Okul</label><br>
+                    </div>
+                </div>
+                <div id="soru5">
+                    <p>5/ Aşağıdakilerden hangisi pil ile çalışır?</p>
+                    <div id="secA5">
+                        <input type="radio" id="a5" name="soru5" value="a" onclick="cevapCheck('a')">
+                        <label for="a">Kamera</label><br>
+                    </div>
+                    <div id="secB5">
+                        <input type="radio" id="b5" name="soru5" value="b" onclick="cevapCheck('b')">
+                        <label for="b">Ayna</label><br>
+                    </div>
+                    <div id="secC5">
+                        <input type="radio" id="c5" name="soru5" value="c" onclick="cevapCheck('c')">
+                        <label for="c">Jeneratör</label><br>
+                    </div>
+                    <div id="secD5">
+                        <input type="radio" id="d5" name="soru5" value="d" onclick="cevapCheck('d')">
+                        <label for="d">Televizyon</label><br>
+                    </div>
+                    <div id="secE5">
+                        <input type="radio" id="e5" name="soru5" value="e" onclick="cevapCheck('e')">
+                        <label for="e">Kumanda</label><br>
+                    </div>
+                </div>
+                <div id="soru6">
+                    <p>6/ Bilgisayar hangi amaçla kullanılmaktadır ? </p>
+                    <div id="secA6">
+                        <input type="radio" id="a6" name="soru6" value="a" onclick="cevapCheck('a')">
+                        <label for="a">Video izlemek</label><br>
+                    </div>
+                    <div id="secB6">
+                        <input type="radio" id="b6" name="soru6" value="b" onclick="cevapCheck('b')">
+                        <label for="b">Aydınlanma</label><br>
+                    </div>
+                    <div id="secC6">
+                        <input type="radio" id="c6" name="soru6" value="c" onclick="cevapCheck('c')">
+                        <label for="c">İletişim</label><br>
+                    </div>
+                    <div id="secD6">
+                        <input type="radio" id="d6" name="soru6" value="d" onclick="cevapCheck('d')">
+                        <label for="d">Isınma</label><br>
+                    </div>
+                    <div id="secE6">
+                        <input type="radio" id="e6" name="soru6" value="e" onclick="cevapCheck('e')">
+                        <label for="e">Oyun oynamak</label><br>
+                    </div>
+                </div>
+                <div id="soru7">
+                    <p>7/ Aşağıdakilerden hangisi batarya ile çalışır ? </p>
+                    <div id="secA7">
+                        <input type="radio" id="a7" name="soru7" value="a" onclick="cevapCheck('a')">
+                        <label for="a">Fırın</label><br>
+                    </div>
+                    <div id="secB7">
+                        <input type="radio" id="b7" name="soru7" value="b" onclick="cevapCheck('b')">
+                        <label for="b">Cep telefonu</label><br>
+                    </div>
+                    <div id="secC7">
+                        <input type="radio" id="c7" name="soru7" value="c" onclick="cevapCheck('c')">
+                        <label for="c">Televizyon</label><br>
+                    </div>
+                    <div id="secD7">
+                        <input type="radio" id="d7" name="soru7" value="d" onclick="cevapCheck('d')">
+                        <label for="d">Kurutma makinesi</label><br>
+                    </div>
+                    <div id="secE7">
+                        <input type="radio" id="e7" name="soru7" value="e" onclick="cevapCheck('e')">
+                        <label for="e">Klavye</label><br>
+                    </div>
+                </div>
+                <div id="soru8">
+                    <p>8/ Evde elektrikler olmadığı zaman aşağıdaki aletlerden hangisini kullanamayız ?</p>
+                    <div id="secA8">
+                        <input type="radio" id="a8" name="soru8" value="a" onclick="cevapCheck('a')">
+                        <label for="a">Perde</label><br>
+                    </div>
+                    <div id="secB8">
+                        <input type="radio" id="b8" name="soru8" value="b" onclick="cevapCheck('b')">
+                        <label for="b">Cep telefonu</label><br>
+                    </div>
+                    <div id="secC8">
+                        <input type="radio" id="c8" name="soru8" value="c" onclick="cevapCheck('c')">
+                        <label for="c">Mum</label><br>
+                    </div>
+                    <div id="secD8">
+                        <input type="radio" id="d8" name="soru8" value="d" onclick="cevapCheck('d')">
+                        <label for="d">Televizyon</label><br>
+                    </div>
+                    <div id="secE8">
+                        <input type="radio" id="e8" name="soru8" value="e" onclick="cevapCheck('e')">
+                        <label for="e">Sandalye</label><br>
+                    </div>
+                </div>
+                <div id="soru9">
+                    <p>9/ Evde kullandığımız elektrikli ev aletleri ve araçlar genellikle aşağıdakilerden hangisiyle
+                        çalışır ?</p>
+                    <div id="secA9">
+                        <input type="radio" id="a9" name="soru9" value="a" onclick="cevapCheck('a')">
+                        <label for="a">Pozitif enerji</label><br>
+                    </div>
+                    <div id="secB9">
+                        <input type="radio" id="b9" name="soru9" value="b" onclick="cevapCheck('b')">
+                        <label for="b">Negatif enerji</label><br>
+                    </div>
+                    <div id="secC9">
+                        <input type="radio" id="c9" name="soru9" value="c" onclick="cevapCheck('c')">
+                        <label for="c">Akü</label><br>
+                    </div>
+                    <div id="secD9">
+                        <input type="radio" id="d9" name="soru9" value="d" onclick="cevapCheck('d')">
+                        <label for="d">Pil</label><br>
+                    </div>
+                    <div id="secE9">
+                        <input type="radio" id="e9" name="soru9" value="e" onclick="cevapCheck('e')">
+                        <label for="e">Şehir Elektriği</label><br>
+                    </div>
+                </div>
+                <div id="soru10">
+                    <p>10/Aşağıdakilerden hangisi elektrikli araç ve gereçlerden değildir ? </p>
+                    <div id="secA10">
+                        <input type="radio" id="a10" name="soru10" value="a" onclick="cevapCheck('a')">
+                        <label for="a">Pencere</label><br>
+                    </div>
+                    <div id="secB10">
+                        <input type="radio" id="b10" name="soru10" value="b" onclick="cevapCheck('b')">
+                        <label for="b">Saç makinesi</label><br>
+                    </div>
+                    <div id="secC10">
+                        <input type="radio" id="c10" name="soru10" value="c" onclick="cevapCheck('c')">
+                        <label for="c">Buzdolabı</label><br>
+                    </div>
+                    <div id="secD10">
+                        <input type="radio" id="d10" name="soru10" value="d" onclick="cevapCheck('d')">
+                        <label for="d">Televizyon</label><br>
+                    </div>
+                    <div id="secE10">
+                        <input type="radio" id="e10" name="soru10" value="e" onclick="cevapCheck('e')">
+                        <label for="e">Vantilatör</label><br>
+                    </div>
+                </div>
+            </div>
+            <div id="cevapSayisi">
+                <label for="cevap" id="cevap"></label>
+            </div>
+            <div>
+                <input type="button" value="GERİ" id="geri" onclick="geriSoru()">
+                <input type="button" value="BİTİR" id="bitir"
+                    onclick="bitirSoru(document.getElementById('geri'),document.getElementById('bitir'),document.getElementById('ileri'))">
+                <input type="button" value="İLERİ" id="ileri" onclick="ileriSoru()">
+            </div>
+        </form>
+    </div>
+</body>
+<footer>
+    <div class="siyah">
+        <p>Geliştirici <span style="text-decoration: underline;">Mohamed Nazim BELABED </span></p>
+    </div>
+</footer>
+</html>

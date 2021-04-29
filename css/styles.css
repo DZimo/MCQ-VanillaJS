@@ -1,0 +1,159 @@
+body{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+  background-image: url(../images/background.png);
+  color: #f8b706;
+}
+
+#basla {
+    background-color: #f8b706;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-top: 40px;
+    width: 30%;
+    padding: 20px 5px;
+  }
+#ad,#soyad
+{
+  margin-top: 20px;
+  margin: 10px;
+  width: 15%;
+  padding: 20px 10px;
+}
+#ad:hover,#soyad:hover,#basla:hover,#bitir:hover,#geri:hover,#ileri:hover
+{
+  opacity: 0.5;
+}
+p:hover
+{
+  opacity: 0.5;
+}
+label:hover
+{
+  opacity: 0.5;
+}
+
+.girisImage{
+  margin-bottom: 70px;
+}
+.girisImage:hover{
+  opacity: 0.5;
+}
+
+.siyah {
+
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.siyah:hover
+{
+  opacity: 0.5;
+}
+#test-sayfa
+{
+  display: none;
+}
+
+#adgoster,#soyadgoster
+{
+  color: white;
+}
+#hata
+{
+  color: red;
+}
+#hatadiv
+{
+  margin:30px;
+}
+
+#cevap
+{
+  color:#f8b706;
+  
+}
+#cevapSayisi
+{
+  margin: 100px; 
+}
+
+#bitir
+{
+  background-color: #f8b706;
+  color: black;
+  padding: 20px 50px;
+  cursor: pointer;
+  margin-top: 40px;
+  border: none;
+  cursor: pointer;
+}
+#geri,#ileri
+{
+  background-color: white;
+  color: black;
+  padding: 20px 50px;
+  cursor: pointer;
+  margin-top: 40px;
+  border: none;
+  cursor: pointer;
+  
+}
+
+#soru1,#soru2,#soru3,#soru4,#soru5,#soru6,#soru7,#soru8,#soru9,#soru10
+{
+    margin-top: 50px;
+}
+
+#secA1,#secB1,#secC1,#secD1,#secE1
+{
+  padding: 20px 50px;
+  align-content: center;
+}
+#secA2,#secB2,#secC2,#secD2,#secE2
+{
+  padding: 20px 50px;
+  align-content: center;
+}
+#secA3,#secB3,#secC3,#secD3,#secE3
+{
+  padding: 20px 50px;
+  align-content: center;
+}
+#secA4,#secB4,#secC4,#secD4,#secE4
+{
+  padding: 20px 50px;
+  align-content: center;
+}
+#secA5,#secB5,#secC5,#secD5,#secE5
+{
+  padding: 20px 50px;
+  align-content: center;
+}
+#secA6,#secB6,#secC6,#secD6,#secE6
+{
+  padding: 20px 50px;
+  align-content: center;
+}
+#secA7,#secB7,#secC7,#secD7,#secE7
+{
+  padding: 20px 50px;
+  align-content: center;
+}
+#secA8,#secB8,#secC8,#secD8,#secE8
+{
+  padding: 20px 50px;
+  align-content: center;
+}
+#secA9,#secB9,#secC9,#secD9,#secE9
+{
+  padding: 20px 50px;
+  align-content: center;
+}
+#secA10,#secB10,#secC10,#secD10,#secE10
+{
+  padding: 20px 50px;
+  align-content: center;
+}
